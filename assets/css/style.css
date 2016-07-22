@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+body {
+	font-family: "Arial",sans-serif;
+}
+
+#wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#header {
+	text-align: center;
+	padding: 10px 20px;
+	position: relative;
+	background-color: blue;
+}
+
+#header h1 {
+	font-size: 2em;
+	color: #fff;
+}
+
+#header span {
+	color: #fff;
+	position: absolute;
+	display: block;
+	top: 10px;
+	
+}
+
+#player {
+	border: 1px solid blue;
+	displey: flex;
+	flex-direction: column;
+}
+
+#img-player {
+	width:100%;
+	text-align: center;
+	padding: 5px;
+}
+
+#img-player img {
+	width: 200px;
+	height: 200px;
+}
+
+#title {
+	padding:5px 10px;
+}
+
+#seek {
+	width: 100%;
+	border-top: 1px solid blue;
+	border-bottom: 1px solid blue;
+	height: 15px;
+}
+
+#inner-seek {
+	width: 30%;
+	height: 100%;
+	background-color: blue;
+}
+
+#wrapper-btns {
+	display: flex;
+	justify-content: space-around;
+	padding:10px;
+}
+
+#btns {
+	
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+#btns span {
+	color : blue;
+	margin: 0 5px;
+	cursor: pointer;
+	
+}
+
+#playlist {
+	border: 1px solid blue;
+	margin-top: 5px;
+}
+
+#playlist li {
+	
+	display: block;
+	height: 30px;
+	border-bottom: 1px dashed blue;
+	text-alignt: center;
+	padding: 5px;
+	
+}
+
+#playlist li:last-child{
+	border-bottom: none;
+}
+#playlist span {
+	width: 10%;
+	display :inline-block;
+}
+
+#playlist span.title {
+	width: 79%;
+}
+
