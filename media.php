@@ -2,13 +2,6 @@
 
 return [
 	[
-		'artist' => 'Alborosie',
-		'song' => 'Ragamuffin',
-		'album' => '2 Times revolution',
-		'path' => 'Alborosie_11._Ragamuffin.mp3',
-		'image' => 'Alborosie_2_Times_Revolution_(2011).jpg'
-	],
-	[
 		'artist' => 'Beastie Boys',
 		'song' => 'Sabotage',
 		'album' => 'Ill communication',
@@ -49,7 +42,7 @@ return [
 		'album' => 'International Sound Of Hedonism',
 		'path' => 'Jaya_The_Cat_11.Two_Ships_Passing.mp3',
 		'image' => 'Jaya-The-Cat-The-New-International-Sound-Of-Hedonism.jpg'
-	],	
+	],
 	[
 		'artist' => 'Suicidal Tendencies',
 		'song' => 'Hippie Killer',
@@ -64,5 +57,5 @@ return [
 		'path' => 'Thievery_Corporation_-_Sound_the_Alarm.mp3',
 		'image' => 'Thievery_Corporation.jpg'
 	],
-		
+
 ];

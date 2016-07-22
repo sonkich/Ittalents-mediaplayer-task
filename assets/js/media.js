@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",player , false);
 // var init
-var playlist;
+var playlist , audio , dir , titleName , seek,img ,id , playbtn;
 
 function player() {
 
@@ -24,14 +24,38 @@ function player() {
 		// викам метода в рекуеста за да съм сиг че плейлиста
 		// е създаден вече
 		createPlaylist();
+		createAudioObject();
 
 	});
 
+	// set object ref
 
+	titleName = document.getElementById("title-name");
+	seek = document.getElementById("inner-seek");
+	img = document.getElementById("img");
+	playbtn = document.getElementById("playpausebtn");
 
 
 }
+/**
+ * създавам аудио обекта и му задавам начални стойности
+ */
+function createAudioObject() {
+	audio = new Audio();
 
+	dir = "assets/media/"
+	
+   audio.src = dir+playlist[0].path;
+	// след като свърши песента да не почна отначало
+	audio.loop = false;
+	titleName.innerHTML = playlist[0].artist + "- " + playlist[0].song;
+
+	seek.style.width = 0;
+	console.log(dir+playlist[0].image);
+	img.src = dir+playlist[0].image;
+	id= 0;
+
+}
 function createPlaylist() {
 
 	// създавам вар за ul за да мога да го апендна после

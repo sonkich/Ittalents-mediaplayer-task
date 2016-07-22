@@ -71,6 +71,7 @@ body {
 	height: 100%;
 	background: linear-gradient(to right, rgba(249,198,103,1) 0%,rgba(247,150,33,1) 100%);
 	border-right: 2px solid #1756A8;
+	box-shadow: 3px 0 4px #fff;
 
 }
 
