@@ -11,7 +11,7 @@ function player() {
 
 		createPlaylist();
 
-	}, {min: 0, max: 3});
+	});
 
 
 
