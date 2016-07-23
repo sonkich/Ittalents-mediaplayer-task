@@ -28,6 +28,7 @@ function player() {
 		createAudioObject();
 		// слагам го тук защото инече се изпълнява преди да се направи аудио обекта
 		audio.addEventListener("timeupdate", function(){ seektimeupdate(); });
+		audio.addEventListener("ended", function(){ nextSong(); });
 	});
 
 	// set object ref
@@ -52,6 +53,7 @@ function player() {
 	next.addEventListener('click', nextSong , false);
 	prev.addEventListener('click', prevSong , false);
 	list.addEventListener('click',function(event){ changeSongSideBtns(event);});
+
 
 
 }
